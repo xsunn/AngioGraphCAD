@@ -1,7 +1,7 @@
 # AngioGraphCAD
 
-Official implementation of the paper "Future cardiovascular events prediction from invasive coronary angiography: A graph representation learning perspective", an extended version of our conference paper titled [Graph Neural Network based Future Clinical Events Prediction from Invasive Coronary Angiography" which was presented at IEEE International Symposium on Biomedical Imaging (ISBI), 2024.](https://ieeexplore.ieee.org/abstract/document/10635813)
-
+Official implementation of the paper "Future cardiovascular events prediction from invasive coronary angiography: A graph representation learning perspective", an extended version of our conference paper titled [Graph Neural Network based Future Clinical Events Prediction from Invasive Coronary Angiography](https://ieeexplore.ieee.org/abstract/document/10635813)
+ which was presented at IEEE International Symposium on Biomedical Imaging (ISBI), 2024.
 
 
 
