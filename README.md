@@ -14,4 +14,5 @@ graph.ipynb shows an example of how to construct lesion graph from an ICA image.
 use torch_geometric.data.Data save the graph into pytorch for training/testing/validation dataloader 
 =======
 
- use torch_geometric.data.Data save the graph into pytorch for training/testing/validation dataloader 
+use torch_geometric.data.Data save the graph into pytorch for training/testing/validation dataloader 
+=======
