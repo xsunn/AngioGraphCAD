@@ -10,9 +10,8 @@ https://wandb.ai/xsun/FAME2MI/reports/Untitled-Report--Vmlldzo5NDA4NDI3
 
 1. Graph construction pipeline 
 graph.ipynb shows an example of how to construct lesion graph from an ICA image. 
-<<<<<<< HEAD
+
 use torch_geometric.data.Data save the graph into pytorch for training/testing/validation dataloader 
 =======
 
  use torch_geometric.data.Data save the graph into pytorch for training/testing/validation dataloader 
->>>>>>> 6642fa8f3907e917186ec3846868376fadb4f41c
