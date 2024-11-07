@@ -4,7 +4,7 @@ sys.path.append('')
 import torch.nn as nn 
 import numpy as np
 import torch.nn.functional as F 
-from VFFM.maskeAttention import MAM, SinconPos
+from maskAttention import MAM, SinconPos
 import copy
 
 def _get_clones(module, N):
@@ -150,7 +150,7 @@ class mergModule(nn.Module):
 
         if self.fusion_method=="atten":
             org_data = data
-            # print("data size",data.size())
+
             data = self.sinconPos(data)
 
             fusedFeat,atten_prob=self.fusionNetwork(data,padding_mask) # batch, lesion No., dimension
@@ -173,5 +173,3 @@ class mergModule(nn.Module):
 
         return patient_out, lesion_feats, lesion_gt, weighted_Feat
         
-
-    
