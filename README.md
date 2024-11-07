@@ -11,7 +11,7 @@ AngioGraphCAD contains:
 ![AngioGraphCAD structure:](model_fig/framework.png)
 
 ### Graph construction pipeline 
-* [graph.ipynb](/graph.ipynb) demonstrates how to construct a lesion graph from an ICA image.
+* [graph.ipynb](/GLE/graph.ipynb) demonstrates how to construct a lesion graph from an ICA image.
     
 ### GLE model for lesion-level prediction 
 * the input of the GLE model is type of torch_geometric.data.Data, the data looks like: Data(x=[1598, 4], edge_index=[2, 9264], y=0.0, num_nodes=1598, lesion_points=[1598], patient_id='31-0003', lesion_id='31-0003_7', lesion_wide_feat_tensor=[1, 21], lesion_wide_feat_names=[21]). x is the node feature, edge_index is the edge connection between two node, y is the label, lesion_wide_feat is the clinical features.  
