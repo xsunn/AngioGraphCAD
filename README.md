@@ -11,14 +11,21 @@ AngioGraphCAD contains:
 ![AngioGraphCAD structure:](model_fig/framework.png)
 
 ### Graph construction pipeline 
-* [graph.ipynb](/graph.ipynb) demonstrates how to construct a lesion graph from an ICA image.
+* [graph.ipynb](/GLE/graph.ipynb) demonstrates how to construct a lesion graph from an ICA image.
     
 ### GLE model for lesion-level prediction 
 * the input of the GLE model is type of torch_geometric.data.Data, the data looks like: Data(x=[1598, 4], edge_index=[2, 9264], y=0.0, num_nodes=1598, lesion_points=[1598], patient_id='31-0003', lesion_id='31-0003_7', lesion_wide_feat_tensor=[1, 21], lesion_wide_feat_names=[21]). x is the node feature, edge_index is the edge connection between two node, y is the label, lesion_wide_feat is the clinical features.  
-* code for GLE model is in [gle_model.ipynb](/gle_model.ipynb).   
+* code for GLE model is in [gle_model.ipynb](/GLE/gle_model.ipynb).   
 * GLE training and validation curve can be found here:
 https://wandb.ai/xsun/FAME2MI/reports/Untitled-Report--Vmlldzo5NDA4NDI3
 
 
 ### VFFM model for patient-level prediction 
 
+* [model.ipynb](/VFFM/gle_model.ipynb), the VFFM model code for patient-level predition
+* [contraLoss](/GLE/contraLss.ipynb), contrastive loss for training
+* [dataloader](/GLE/patientDataset.ipynb), first use the [graph.ipynb](/graph.ipynb) to generate the graph for each lesion  
+** patient1-view2-lesion1.pt  
+** patient1-view1-lesion2.pt  
+** patient2-view1-lesion2.pt  
+** ......  
